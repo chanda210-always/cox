@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to tomcat'
-				deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat', path: '', url: 'http://http://3.80.158.249:9080/')], contextPath: 'insta', war: '**/*.war'
+				deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat', path: '', url: 'http://http://3.80.158.249:9080/')], contextPath: 'instams', war: '**/*.war'
 				
             }
         }		
